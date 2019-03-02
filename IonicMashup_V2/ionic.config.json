@@ -1,7 +1,0 @@
-{
-  "name": "IonicMashup",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
