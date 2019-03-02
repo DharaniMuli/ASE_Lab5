@@ -1,0 +1,21 @@
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-title>Gender Detection</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Curious to find the gender based on name</p>
+        <div padding>
+          <ion-item>
+            <ion-input type="text" placeholder="Name" name="name" [(ngModel)]="searchterm" required></ion-input>
+          </ion-item>
+          <ion-button  (click)="checkGender()" expand="block">Check gender</ion-button>
+
+        </div>
+
+        <p>{{gender}}</p> <br>
+        <p> {{accuracy}}</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-button  href="/emotiondetection" expand="block">Emotion Detection</ion-button>
+</ion-content>
