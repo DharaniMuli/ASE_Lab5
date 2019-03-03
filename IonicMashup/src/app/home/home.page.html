@@ -17,5 +17,10 @@
         <p> {{accuracy}}</p>
       </ion-card-content>
     </ion-card>
+    <div>
+      <p> Previously you searched for: </p>
+        <li *ngFor="let item of history">{{item.Value}}</li>
+    </div>
+
     <ion-button  href="/emotiondetection" expand="block">Emotion Detection</ion-button>
 </ion-content>
